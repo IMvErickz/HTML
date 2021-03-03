@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
+
+    <title>Cadastro</title>
+</head>
+<body>
+    
+
+    <div class="campo">
+
+        <h1 id="titulo"><strong>Cadastro De DEVs</strong></h1>
+        <p id="subtitulo">complete o cadastro</p>
+        <br>
+
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>nome</strong></label>
+                <input type="text" name= "nome" id= nome required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>sobrenome</strong></label>
+                <input type="text" name= "sobrenome" id= "sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name= "email" id= email required>
+        </div>
+        <div class="campo">
+            <label><strong>Como voce se sente programando?</strong></label>
+            <label>
+                <input type="radio" name= "como" value= "excelente">Muito bem
+            </label>
+            <label>
+                <input type="radio" name= "como" value= "maisoumenos">Mais ou menos
+            </label>
+            <label>
+                <input type="radio" name="como" value="mesintopessimo">Me sinto péssimo
+            </label>
+        </div>
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade:</strong></label>
+            <select id="seniroridade:">
+                <option value="">Selecione</option>
+                <option>Leigozão</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+                <option>Mestre da programação</option>
+                <option>Rapaz, meu nível nem tem julgamento</option>
+            </select>
+
+        </div>
+        
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione a tecnologia que você usa:</strong></label><br><br>
+                <input type="checkbox" id= "tecnologia1" name= "desktop" value="PC mosntro">
+                <label for="tecnologia1">PC monstro</label>
+                <input type="checkbox" id="tecnologia2" name="mobile" value="Notebook">
+                <label for="tecnologia2">Notebook</label>
+                <input type="checkbox" id="tecnologia3" name="moba" value="Celular">
+                <label for="tecnologia3">Celular</label>
+
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
+            <textarea rows="10" style="width: 26em" id="experiência" name="experiência"></textarea>
+        </div>
+
+        <fieldset>
+
+            <div class="campo">
+
+                <label><strong>Qual periférico você prefere?</strong></label>
+                <label>
+                    <input type="radio" name="per" value="Mouse">Mouse                
+                </label>
+                <label>
+                    <input type="radio" name="per" value="Mousegamer">Mouse gamer
+                </label>
+                <label>
+                    <input type="radio" name="per" value="Teclado">Teclado
+                </label>
+                <label>
+                    <input type="radio" name="per" value="Monitor">Monitor
+                </label>
+                <label>
+                    <input type="radio" name="per" value="Notebook">Notebook
+                </label>
+                <label>
+                    <input type="radio" name="per" value="Cooler">Cooler
+                </label>
+            </div>
+        
+        </fieldset>
+    
+        <fieldset>
+            <div class="campo">
+                <label><strong>Qual seu hardware favorito?</strong></label>
+                <label>
+                    <input type="radio" name="hard" value="Processador">Processador
+                </label>
+                <label>
+                    <input type="radio" name="hard" value="HD">HD
+                </label>
+                <label>
+                    <input type="radio" name="hard" value="SSD">SSD
+                </label>
+                <label>
+                    <input type="radio" name="hard" value="RAM">RAM
+                </label>
+                <label>
+                    <input type="radio" name="hard" value="Placa mãe">Placa mãe
+                </label>
+                
+            </div>
+        </fieldset>
+        <fieldset>
+            <button class="botao">Concluir</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
